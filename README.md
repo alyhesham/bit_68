@@ -9,8 +9,8 @@ Adding a Product to cart
 
 API examples:
 
-add to cart: localhost/user/<product-name>/add-to-cart/
-	
+add to cart: localhost/user/"product-name"/add-to-cart/
+
 Login: localhost/user/login/    email and password should be provided in JSON format in the body
 
 add Product: localhost/products/    name and price should be provided in JSON format in the body
