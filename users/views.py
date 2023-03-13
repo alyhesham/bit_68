@@ -103,18 +103,18 @@ def add_to_cart(request, name, email):
     return HttpResponse('item added to cart')
 
 def place_order(request, email):
-    field_name_list = []
+#     field_name_list = []
 
-    user = User.objects.get(email= email)
-    cart  = Cart.objects.get(user_id= user.id)
-    cart_items = CartItem.objects.get(id= cart.id)
-    cart_items = cart_items.values(*field_name_list)
-    final_data = []
-    for elem in qs:
-        print(type(elem))
-        print(elem)
-    for v in elem.values():
-        final_data.append(v)
+#     user = User.objects.get(email= email)
+#     cart  = Cart.objects.get(user_id= user.id)
+#     cart_items = CartItem.objects.get(id= cart.id)
+#     cart_items = cart_items.values(*field_name_list)
+#     final_data = []
+#     for elem in qs:
+#         print(type(elem))
+#         print(elem)
+#     for v in elem.values():
+#         final_data.append(v)
     # order_item, status  = OrderItem.objects.get_or_create()
 
     # # create order associated with the user
